@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+    <meta title="FreeTypeMemLeak" package="ru.grebenshikov.FreeTypeMemLeak" version="1.0.0" company="" />
+    <app main="FreeTypeMemLeak" file="FreeTypeMemLeak" path="Export" />
+
+    <window width="800" height="600" unless="mobile" />
+    <window fps="60" vsync="true" antialiasing="4" orientation="portrait" resizable="false" if="mobile" />
+
+    <source path="src" />
+    <haxelib name="openfl" />
+
+
+	<assets path="assets" rename="assets" include="*" exclude="nme.svg" />
+    <assets path="assets/fonts" rename="fonts" include="*.ttf"/>
+
+    <icon path="assets/nme.svg" />
+	
+    <ios deployment="5.0" devices="universal" />
+
+</project>
